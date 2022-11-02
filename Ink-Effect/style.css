@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body{
+    overflow: hidden;
+    background-color: beige;
+    display: inline-block;
+}
+
+#wrap{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #232323;
+    font-size: 50px;
+}
+
+span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    background-color: #000;
+    animation: blow 0.2s linear infinite;
+}
+
+@keyframes blow {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(10%);
+    }
+  }
